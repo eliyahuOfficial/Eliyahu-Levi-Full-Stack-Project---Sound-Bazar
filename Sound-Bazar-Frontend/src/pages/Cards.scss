@@ -1,0 +1,130 @@
+$rhap_theme-color: #ffffff !default;
+$rhap_bar-color: #ffffff !default;
+$rhap_time-color: #ffffff !default;
+$rhap_font-family: inherit !default;
+
+
+
+.custom-audio-player {
+
+    border-radius: 1rem;
+    background-color: transparent;
+
+
+    .rhap_container {
+
+        font-family: $rhap_font-family;
+
+    }
+
+    .rhap_play-pause-button,
+    .rhap_forward-button,
+    .rhap_rewind-button,
+    .rhap_volume-button,
+    .rhap_repeat-button,
+    .rhap_shuffle-button,
+
+    .rhap_volume-indicator {
+        color: $rhap_theme-color;
+    }
+
+
+    .rhap_volume-filled {
+        background-color: $rhap_theme-color;
+
+    }
+
+    .rhap_progress {
+        background-color: $rhap_bar-color;
+    }
+
+    .rhap_current-time,
+    .rhap_total-time {
+        color: $rhap_time-color;
+    }
+
+
+
+
+    .rhap_play-pause-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .rhap_progress-indicator {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 255, 255)
+    }
+
+    .rhap_progress {
+        height: 15px;
+    }
+
+    .rhap_current-time,
+    .rhap_total-time {
+        font-size: 20px;
+    }
+
+    .rhap_progress-filled {
+        background-color: white !important;
+
+    }
+
+
+
+    .rhap_container {
+        background: linear-gradient(to right, #3160fa, #ea35fa) !important;
+    }
+
+
+    .rhap_header {
+        color: $rhap_theme-color;
+        font-size: 20px;
+        letter-spacing: 0.2rem;
+
+    }
+}
+
+
+
+.close-button {
+    position: absolute;
+    top: -25px;
+    left: 15px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #006dfc;
+}
+
+.close-button:hover {
+    color: #e24fff;
+}
+
+
+.logoaudio {
+    will-change: filter;
+    transition: filter 300ms;
+    left: 5rem;
+    bottom: 3rem;
+    animation: logoaudio-spin 15s linear infinite;
+
+}
+
+@keyframes logoaudio-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.h2audiocards {
+    letter-spacing: 0.2rem;
+}
