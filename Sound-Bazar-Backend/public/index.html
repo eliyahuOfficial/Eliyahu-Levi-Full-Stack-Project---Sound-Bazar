@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a web page that demonstrates the usage of an API.">
+    <meta name="keywords" content="API, web development, HTML">
+    <title>API Docs for Sound Bazar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Sound Bazar API </h1>
+        <img src="./logo.png" alt="logo">
+    </div>
+    <h2>Welcome to the API documentation page.</h2>
+    <p>The API provides endpoints to manage users and sound-cards in a system. It includes routes for CRUD operations on
+        users
+        and sound-cards, along with middleware for logging, error handling, and CORS support.</p><br>
+    <p><strong>Base URL:</strong></p>
+    <p><strong>http://localhost:8080/api/v1</strong></p>
+    <p><strong>DB_CONNECTION_STRING:</strong></p>
+    <p><strong>mongodb://localhost:27017/SoundBazar</strong></p>
+
+    <h3>Users:</h3>
+    <p>Endpoints to manage users.</p>
+    <ul>
+        <li><strong>GET /users</strong> : Get all users.</li>
+        <hr />
+        <li><strong>POST /users</strong> : Create a new user.</li>
+        <hr />
+        <li><strong>DELETE /users/:id</strong> : Delete user by ID.</li>
+        <hr />
+        <li><strong>PUT /users/:id</strong> : Update user by ID.</li>
+        <hr />
+        <li><strong>POST /users/login</strong> : Login user.</li>
+        <hr />
+        <li><strong>GET /users/:id</strong> : Get user by ID.</li>
+        <hr />
+    </ul>
+
+
+    <h3>Sound Cards:</h3>
+    <p>Endpoints to manage cards.</p>
+    <ul>
+        <li><strong>POST /cards</strong>: Create a new card.</li>
+        <hr />
+        <li><strong>POST /comments</strong>: Create a new comment.</li>
+        <hr />
+        <li><strong>GET /comments/:id</strong>: Get comments by ID card.</li>
+        <hr />
+        <li><strong>GET /cards/:id</strong>: Get card by ID.</li>
+        <hr />
+        <li><strong>GET /cards/my-cards</strong>: Get my-cards.</li>
+        <hr />
+        <li><strong>GET /cards</strong>: Get all cards.</li>
+        <hr />
+        <li><strong>PUT /cards/:id</strong>: Update card by ID.</li>
+        <hr />
+        <li><strong>PATCH /cards/:id</strong>: Like card.</li>
+        <hr />
+        <li><strong>DELETE /cards/:id</strong>: Delete card by ID.</li>
+        <hr />
+    </ul>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/eliyahuofficial/" target="_blank">Created by Eliyahu Levi</a>
+        <hr />
+        <p><strong>Note: This server is a part of the full-stack project, Sound Bazar. For the complete experience,
+                including the full vibe
+                and feeling, you need both the server-side and the client-side projects.</strong></p>
+        <hr />
+    </footer>
+
+</body>
+
+</html>
